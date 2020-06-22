@@ -36,3 +36,5 @@ function displayLeaderboard(data) {
 
 
 render();
+
+console.log(Response.json.players[0].name)
