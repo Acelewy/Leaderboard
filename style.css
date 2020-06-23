@@ -66,3 +66,8 @@ li {
     background: #6979F8;
     padding: 15px;
 }
+
+#customers tr.highlight td {
+    background-color: burlywood;
+    opacity: 1px;
+}

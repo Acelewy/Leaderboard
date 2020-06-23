@@ -1,1 +1,41 @@
-[{ "name": "Thomas", "score": 4 }, { "name": "Khadijah", "score": 0 }, { "name": "Elvis", "score": 4 }, { "name": "Micheal", "score": 4 }, { "name": "Monica", "score": 0 }, { "name": "Mary", "score": 4 }, { "name": "Chuks", "score": 3 }, { "name": "Lekan", "score": 7 }, { "name": "Preye", "score": 1 }, { "name": "Irene", "score": 4 }]
+[{
+        "name": "Thomas",
+        "score": 4
+    },
+    {
+        "name": "Khadijah",
+        "score": 0
+    },
+    {
+        "name": "Elvis",
+        "score": 4
+    },
+    {
+        "name": "Micheal",
+        "score": 4
+    },
+    {
+        "name": "Monica",
+        "score": 0
+    },
+    {
+        "name": "Mary",
+        "score": 4
+    },
+    {
+        "name": "Chuks",
+        "score": 3
+    },
+    {
+        "name": "Lekan",
+        "score": 7
+    },
+    {
+        "name": "Preye",
+        "score": 1
+    },
+    {
+        "name": "Irene",
+        "score": 4
+    }
+]

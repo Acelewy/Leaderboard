@@ -5,10 +5,25 @@ function Player(myName, myScore) {
 
 
 function displayLeaderboard(Players) {
-    let theExport = "";
+
     Players.sort((aPlayer, bPlayer) => bPlayer.score - aPlayer.score);
-    Players.forEach((player) => theExport += '<tr><td>' + player.name + '</td><td>' + player.score + '</td></tr>');
-    document.getElementById("thingy").innerHTML = theExport; //Why have good ID's when you can have bad ones? | Who needs children when we can use innerHTML?
+    drawTable(Players.slice(0, 3), "highlight");
+    drawTable(Players.slice(3));
+}
+
+function drawTable(players, className) {
+    let theExport = "";
+    players.forEach((player) => theExport += `<tr class="${className}">
+    <td> ${player.name}</td>
+    <td>${player.score}</td>
+    <td>
+<a href="https://twitter.com/intent/tweet?text=My%20Points%20on%20Leaderboard%20is  ${player.score}">Share on Twitter</a></td>
+
+    </tr>`);
+
+
+    document.getElementById("thingy").innerHTML += theExport; //Why have good ID's when you can have bad ones? | Who needs children when we can use innerHTML?
+
 }
 
 let players;
@@ -25,16 +40,7 @@ function render() {
 
 }
 
-function displayLeaderboard(data) {
-    let theExport = "";
-    //clear old dom
-    const Players = [...data]
-    Players.sort((aPlayer, bPlayer) => bPlayer.score - aPlayer.score);
-    Players.forEach((player) => theExport += '<tr><td>' + player.name + '</td><td>' + player.score + '</td></tr>');
-    document.getElementById("thingy").innerHTML = theExport; //Why have good ID's when you can have bad ones? | Who needs children when we can use innerHTML?
-}
+
 
 
 render();
-
-console.log(Response.json.players[0].name)
